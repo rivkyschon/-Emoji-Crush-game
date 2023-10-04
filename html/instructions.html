@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/instructions.css">
+</head>
+
+<body>
+    <div>
+        <h1>GAME INSTRUCTIONS</h1>
+        <p class="text">
+            The goal of the game is to reach the score of 500 in the alloted time.This is reached by creating rows and
+            columns of four or three of the same emojis.
+        </p>
+    </div>
+
+    <div id="gifs">
+        <img src="../img/score_1.gif">
+        <p class="grid_text"> Every row/column that you find adds points.</p>
+        <img src="../img/hint.gif">
+        <p class="grid_text">The hint highlights two emojis that with one move can become a set of three.</p>
+
+    </div>
+
+    <p class="score_count">SCORE COUNT</p>
+    <ul>
+        <li>for a row/column of three: <span>+15</span></li>
+        <li>for a row/column of four: <span>+20</span></li>
+        <li>every drag: <span>-5</span></li>
+        <li>hint: <span>-40</span></li>
+    </ul>
+    <a id="startGame" href="../html/game.html">start game</a>
+</body>
+
+</html>

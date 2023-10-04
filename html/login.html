@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+        <link rel="stylesheet" href="../css/login.css">
+
+</head>
+<body>
+        <div class="form-parent">
+                <div class="sign-up-img"></div>
+                <div class="sign-in-img"></div>
+                <div class="form-container">
+                    <div class="form" id="sign-in-form">
+                        <h1 class="title">sign in</h1>
+                        <div class="fields">
+                            <input type="email" placeholder="mail" id="mailin" >
+                            <input type="password" placeholder="password" id="passwordin" >
+                        </div>
+                        <div class="submit-container">
+                            <button type="submit" class="btn" id="signin">sign in</button>
+                            <p class="link" onclick="switchForm('register')">new here ? sign up here</p>
+                        </div>
+                    </div>
+                    <div class="form" id="sign-up-form">
+                        <h1 class="title">sign up</h1>
+                        <div class="fields">
+                            <input type="text" placeholder="username" id="upname" >
+                            <input type="email" placeholder="email" id="upmail" >
+                            <input type="password" placeholder="password" id="uppassword" >
+                        </div>
+                        <div class="submit-container">
+                            <button type="submit" class="btn" id="signup">sign up </button>
+                            <p class="link" onclick="switchForm('login')">already have an account ? sign in here</p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+</body>
+<script src="../js/login.js"></script>
+</html>

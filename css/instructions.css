@@ -1,0 +1,106 @@
+body{
+    background-image: url('../img/a.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: rgb(2, 2, 2);
+    font-size: 80px; 
+    font-weight: bold;
+    text-align: center;
+    border-top: black 10px double;
+    border-bottom: black 10px double;
+
+}
+.score_count{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: rgb(2, 2, 2);
+    font-size: 60px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.text{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(2, 2, 2);
+    font-size: 35px; 
+    font-weight: bold;
+    text-align: center; 
+}
+li{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(2, 2, 2);
+    font-size: 35px; 
+    font-weight: bold;
+    z-index: 10;
+   
+}
+span{
+    color: red;
+}
+div{
+    /* display: flex; */
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+#startGame{
+    min-width: 200px;
+    height: 70px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: aliceblue;
+    animation: glow 1s ease-in-out infinite alternate;
+    background: #171717;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 50px rgb(0 0 0 / 75%);
+    margin-left: auto;
+    bottom: 100px;
+    right: 100px;
+    transition: 0.5s ease;
+}
+
+#startGame:hover{
+   transform: scale(110%); 
+   transition:0.5s ease ;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d4af0a;
+    }
+      
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #d4af0a;
+    }
+  }
+
+img{
+    height: 167px;
+    width: 297px;
+    border: dotted black 5px;
+    border-style: dotted;
+}
+.grid_text{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(2, 2, 2);
+    font-size: 25px; 
+    font-weight: bold;
+}
+#gifs{
+    display: grid;
+    grid-gap:10px;
+    column-gap: 30px;
+    grid-template-rows: 300px 500px;
+    grid-template-columns: 300px 500px;
+    margin-bottom: -301px;
+}
